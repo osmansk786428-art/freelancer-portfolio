@@ -1,226 +1,375 @@
 /* =========================
-   Global
+   Professional Freelancer Portfolio
    ========================= */
+
+:root {
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --text: #172033;
+    --muted: #65718a;
+    --primary: #635bff;
+    --primary-hover: #4b43e6;
+    --border: #e3e8f2;
+    --shadow: 0 12px 35px rgba(25, 35, 70, 0.07);
+}
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 85px;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f4f4f4;
-    color: #222;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    transition: background 0.25s, color 0.25s;
 }
 
+body > * {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* =========================
-   Navigation
-   ========================= */
+/* Navigation */
 
 nav {
+    position: sticky;
+    top: 10px;
+    z-index: 100;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 40px;
-    padding: 15px;
-    border-radius: 8px;
+    gap: 10px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
 }
 
 nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: var(--text);
     text-decoration: none;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
 }
 
+nav a:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
 
-/* =========================
-   Sections
-   ========================= */
+/* Typography */
 
-section {
-    padding: 50px 0;
-    border-bottom: 1px solid #ccc;
+h1, h2, h3 {
+    line-height: 1.25;
+    overflow-wrap: anywhere;
 }
 
 h1 {
-    font-size: 42px;
+    margin: 0 0 20px;
+    font-size: clamp(36px, 6vw, 64px);
+    letter-spacing: -1.8px;
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    margin: 0 0 22px;
+    font-size: clamp(27px, 4vw, 38px);
+    letter-spacing: -0.7px;
 }
 
 h3 {
-    margin-top: 25px;
+    margin-top: 0;
+    font-size: 21px;
 }
 
+p {
+    color: var(--muted);
+}
 
-/* =========================
-   Home
-   ========================= */
+a {
+    overflow-wrap: anywhere;
+}
+
+/* Sections */
+
+section {
+    padding: 65px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Home / Hero */
 
 #home {
-    min-height: 300px;
+    min-height: 410px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    padding: 75px 45px;
+    margin: 22px auto;
+    background:
+        radial-gradient(circle at 90% 15%, rgba(99, 91, 255, 0.16), transparent 32%),
+        var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
 }
 
+#home p {
+    max-width: 650px;
+    font-size: 18px;
+}
 
-/* =========================
-   Skills
-   ========================= */
+#home h1 {
+    max-width: 850px;
+}
+
+#home h1 span {
+    color: var(--primary);
+}
+
+/* General links and buttons */
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+#themeButton {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Lists */
 
 ul {
-    padding-left: 25px;
+    padding-left: 23px;
 }
 
 li {
     margin: 10px 0;
 }
 
-
-/* =========================
-   Table
-   ========================= */
+/* Tables */
 
 table {
     width: 100%;
     border-collapse: collapse;
+    overflow-wrap: anywhere;
+    background: var(--surface);
+    border-radius: 12px;
 }
 
-th,
-td {
-    padding: 12px;
-    border: 1px solid #999;
+th, td {
+    padding: 15px;
+    border: 1px solid var(--border);
     text-align: left;
 }
 
-
-/* =========================
-   Form
-   ========================= */
-
-input,
-textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-    border-radius: 6px;
-    font-size: 16px;
+th {
+    background: rgba(99, 91, 255, 0.09);
 }
 
-textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-
-/* =========================
-   Buttons
-   ========================= */
-
-button {
-    padding: 11px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#themeButton {
-    margin-bottom: 20px;
-}
-
-
-/* =========================
-   Footer
-   ========================= */
-
-footer {
-    text-align: center;
-    padding: 30px 0;
-}
-
-
-/* =========================
-   Dark Mode
-   ========================= */
-
-.dark {
-    background: #222;
-    color: white;
-}
-
-.dark input,
-.dark textarea {
-    background: #333;
-    color: white;
-    border-color: #666;
-}
-
-.dark th,
-.dark td {
-    border-color: #666;
-}
-
-.dark section {
-    border-color: #555;
-}
-
-
-/* =========================
-   Mobile
-   ========================= */
-
-@media (max-width: 600px) {
-
-    body {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    nav {
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 14px;
-    }
-
-    section {
-        padding: 35px 0;
-    }
-
-}
-/* =========================
-   Projects
-   ========================= */
+/* Project cards */
 
 .project {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #999;
-    border-radius: 8px;
+    margin: 22px 0;
+    padding: 25px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(25, 35, 70, 0.11);
 }
 
 .project h3 {
     margin-top: 0;
 }
 
-.dark .project {
-    border-color: #666;
+.project p {
+    margin-bottom: 0;
+}
+
+/* Contact form */
+
+form {
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin-top: 17px;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 7px;
+    padding: 13px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid rgba(99, 91, 255, 0.25);
+    border-color: var(--primary);
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+form button,
+form input[type="submit"] {
+    margin-top: 18px;
+}
+
+/* Footer */
+
+footer {
+    padding: 35px 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+/* Dark mode */
+
+body.dark {
+    --bg: #101522;
+    --surface: #1a2233;
+    --text: #edf1ff;
+    --muted: #b2bdd2;
+    --primary: #918aff;
+    --primary-hover: #7770f0;
+    --border: #303b50;
+    --shadow: 0 12px 35px rgba(0, 0, 0, 0.16);
+}
+
+.dark nav a:hover {
+    color: #ffffff;
+}
+
+.dark th {
+    background: rgba(145, 138, 255, 0.14);
+}
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+    body {
+        padding: 0 14px;
+    }
+
+    nav {
+        position: static;
+        justify-content: flex-start;
+        gap: 5px;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    nav a {
+        padding: 7px 9px;
+        font-size: 13px;
+    }
+
+    #home {
+        min-height: 320px;
+        padding: 35px 23px;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: clamp(32px, 9vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 42px 0;
+    }
+
+    .project {
+        padding: 19px;
+    }
+
+    th, td {
+        padding: 9px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        padding: 0 10px;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #home {
+        padding: 28px 17px;
+    }
+
+    th, td {
+        padding: 7px;
+        font-size: 12px;
+    }
 }
