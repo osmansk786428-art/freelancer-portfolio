@@ -1,391 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="theme-color" content="#f5f7ff">
-    <meta name="description" content="Osmangazi — Freelancer and Web Developer. Website development, data entry and web research.">
-
-    <title>Osmangazi | Freelancer & Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Osmangazi — Freelancer and Web Developer. Responsive websites, data entry and web research.">
+  <title>Osmangazi | Pro Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
 
-<header class="site-header">
+  <header class="site-header">
     <a class="logo" href="#home">Osmangazi<span>.</span></a>
 
-    <nav aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <button id="themeButton" class="theme-button" type="button"
-            onclick="toggleTheme()" aria-label="Toggle dark mode">
-        🌙
-    </button>
-</header>
+    <div class="header-actions">
+      <button id="themeButton" class="theme-button" type="button"
+        aria-label="Toggle color theme">☀️</button>
+      <button id="menuButton" class="menu-button" type="button"
+        aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
 
-<main>
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-content reveal">
+        <span class="eyebrow"><span class="status-dot"></span> FREELANCER · WEB DEVELOPER</span>
+        <h1>Hello, I'm <span class="gradient-text">Osmangazi</span> 👋</h1>
+        <h2>I build <span class="changing-text">responsive websites.</span></h2>
+        <p>
+          I create clean, responsive web experiences and provide data entry
+          and web research services. I keep learning, building and improving
+          with every project.
+        </p>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <span class="eyebrow">FREELANCER · WEB DEVELOPER</span>
+        <div class="hero-actions">
+          <a class="button primary-button" href="#contact">Let's Talk ↗</a>
+          <a class="button secondary-button" href="#projects">Explore Projects ↓</a>
+        </div>
 
-            <h1>Hello, I'm <span>Osmangazi</span> 👋</h1>
+        <div class="hero-actions extra-actions">
+          <a class="button fiverr-button" href="https://www.fiverr.com/s/9ddaB2D"
+            target="_blank" rel="noopener noreferrer">Hire Me on Fiverr ↗</a>
+          <a class="text-link" href="https://www.fiverr.com/osmansk786428"
+            target="_blank" rel="noopener noreferrer">View Fiverr Profile ↗</a>
+        </div>
 
-            <h2>I build simple, responsive websites.</h2>
+        <div class="hero-note">
+          <span class="status-dot"></span>
+          Open to discussing suitable projects
+        </div>
+      </div>
 
-            <p>
-                I'm developing my skills in web development, data entry
-                and web research while building useful digital projects.
-            </p>
+      <div class="hero-visual reveal" aria-label="Web development illustration">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>portfolio.js</span>
+          </div>
+          <div class="code-body">
+            <p><span class="code-purple">const</span> developer = {</p>
+            <p class="indent"><span class="code-blue">name</span>: <span class="code-green">'Osmangazi'</span>,</p>
+            <p class="indent"><span class="code-blue">skills</span>: [</p>
+            <p class="indent2"><span class="code-green">'HTML'</span>, <span class="code-green">'CSS'</span>,</p>
+            <p class="indent2"><span class="code-green">'JavaScript'</span></p>
+            <p class="indent">],</p>
+            <p class="indent"><span class="code-blue">mindset</span>: <span class="code-green">'Always learning'</span></p>
+            <p>};</p>
+            <p class="code-comment">// building one project at a time ✦</p>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">✦ Creative ideas</div>
+        <div class="floating-chip chip-bottom">⌘ Always learning</div>
+      </div>
+    </section>
 
-            <div class="hero-actions">
-                <a class="button primary-button" href="#contact">Hire Me ↗</a>
-                <a class="button secondary-button" href="#projects">View Projects ↓</a>
+    <section id="about" class="section-wrap section-block">
+      <div class="section-heading reveal">
+        <span class="eyebrow">GET TO KNOW ME</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+        <p>A beginner freelancer focused on learning and building.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card reveal">
+          <div class="big-symbol">✦</div>
+          <h3>Learning today. Building for tomorrow.</h3>
+          <p>
+            I am a beginner freelancer interested in web development,
+            data entry and web research. I enjoy learning technologies
+            and creating practical digital projects.
+          </p>
+          <p>
+            My goal is to communicate clearly, keep improving and deliver
+            work that matches each client's requirements.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card"><strong>03+</strong><span>Areas of service</span></div>
+          <div class="stat-card"><strong>100%</strong><span>Learning mindset</span></div>
+          <div class="stat-card"><strong>24/7</strong><span>Portfolio online*</span></div>
+          <p class="small-note">*Availability depends on hosting and network service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrap section-block">
+      <div class="section-heading reveal">
+        <span class="eyebrow">MY TOOLKIT</span>
+        <h2>Skills & <span class="gradient-text">Learning</span></h2>
+        <p>Technologies and areas I'm currently developing.</p>
+      </div>
+      <div class="card-grid skills-grid">
+        <article class="glass-card skill-card reveal">
+          <span class="card-icon">🌐</span><h3>HTML & CSS</h3>
+          <p>Page structure, styling and responsive layouts.</p>
+          <span class="tag">Web development</span>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <span class="card-icon">⚡</span><h3>JavaScript</h3>
+          <p>Interactive elements and browser functionality.</p>
+          <span class="tag">Learning & building</span>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <span class="card-icon">⌨️</span><h3>Data Entry</h3>
+          <p>Organizing information with care and consistency.</p>
+          <span class="tag">Data services</span>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <span class="card-icon">🔎</span><h3>Web Research</h3>
+          <p>Finding and organizing information from online sources.</p>
+          <span class="tag">Research</span>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <span class="card-icon">🐧</span><h3>Linux</h3>
+          <p>Practicing command-line tools and Linux basics.</p>
+          <span class="tag">Technical learning</span>
+        </article>
+        <article class="glass-card skill-card reveal">
+          <span class="card-icon">🛡️</span><h3>Cybersecurity Basics</h3>
+          <p>Learning defensive security and safe lab practices.</p>
+          <span class="tag">Learning</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section-wrap section-block">
+      <div class="section-heading reveal">
+        <span class="eyebrow">WHAT I CAN HELP WITH</span>
+        <h2>My <span class="gradient-text">Services</span></h2>
+        <p>Practical digital services with clear communication.</p>
+      </div>
+      <div class="card-grid">
+        <article class="glass-card service-card reveal">
+          <span class="card-icon">💻</span>
+          <h3>Responsive Websites</h3>
+          <p>Simple, clean websites designed to work across mobile and desktop screens.</p>
+          <a class="card-link" href="https://www.fiverr.com/s/9ddaB2D"
+             target="_blank" rel="noopener noreferrer">Discuss a website ↗</a>
+        </article>
+        <article class="glass-card service-card reveal">
+          <span class="card-icon">📊</span>
+          <h3>Data Entry</h3>
+          <p>Careful data input, formatting and organization for straightforward tasks.</p>
+          <a class="card-link" href="#contact">Ask about this service ↗</a>
+        </article>
+        <article class="glass-card service-card reveal">
+          <span class="card-icon">🔍</span>
+          <h3>Web Research</h3>
+          <p>Online research and organized information gathering based on your brief.</p>
+          <a class="card-link" href="#contact">Ask about this service ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-wrap section-block">
+      <div class="section-heading reveal">
+        <span class="eyebrow">SELECTED WORK</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+        <p>A growing collection of experiments and digital projects.</p>
+      </div>
+      <div class="card-grid project-grid">
+        <article class="glass-card project-card reveal">
+          <div class="project-art art-portfolio"><span>&lt;/&gt;</span><i>HTML · CSS · JS</i></div>
+          <div class="project-content">
+            <span class="project-type">WEB DEVELOPMENT</span>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive portfolio website to present my work and skills.</p>
+            <div class="project-links">
+              <a href="https://osmansk786428-art.github.io/Personal-portfolio/"
+                 target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/osmansk786428-art/Personal-portfolio"
+                 target="_blank" rel="noopener noreferrer">Source Code ↗</a>
             </div>
-
-            <div class="hero-note">
-                <span class="status-dot"></span>
-                Open to discussing suitable projects
+          </div>
+        </article>
+        <article class="glass-card project-card reveal">
+          <div class="project-art art-heart"><span>♥</span><i>Made with care</i></div>
+          <div class="project-content">
+            <span class="project-type">CREATIVE WEB</span>
+            <h3>Heart Animation</h3>
+            <p>A small animated web experience created with HTML, CSS and JavaScript.</p>
+            <div class="project-links">
+              <a href="https://github.com/osmansk786428-art/hasina-heart-.git"
+                 target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             </div>
-        </div>
-
-        <div class="hero-visual" aria-hidden="true">
-            <div class="visual-card">
-                <div class="visual-icon">&lt;/&gt;</div>
-                <div class="visual-line long"></div>
-                <div class="visual-line medium"></div>
-                <div class="visual-line short"></div>
-                <div class="visual-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
-                </div>
+          </div>
+        </article>
+        <article class="glass-card project-card reveal">
+          <div class="project-art art-wifi"><span>⌁</span><i>Network dashboard concept</i></div>
+          <div class="project-content">
+            <span class="project-type">UTILITY PROJECT</span>
+            <h3>WiFi Viewer</h3>
+            <p>A learning project for displaying Wi-Fi information and saving reports.</p>
+            <div class="project-links">
+              <a href="#contact">Ask me about this project ↗</a>
             </div>
-            <div class="floating-badge badge-top">✦ Creative ideas</div>
-            <div class="floating-badge badge-bottom">⌘ Always learning</div>
-        </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-        <div class="section-heading">
-            <span class="eyebrow">GET TO KNOW ME</span>
-            <h2>About Me</h2>
-            <p>A beginner freelancer focused on learning and building.</p>
-        </div>
-
-        <div class="about-card">
-            <div class="about-symbol">✦</div>
-            <div>
-                <h3>Learning today. Building for tomorrow.</h3>
-                <p>
-                    I am a beginner freelancer interested in web development,
-                    data entry and web research. I enjoy learning new
-                    technologies and creating practical projects.
-                </p>
-                <p>
-                    My goal is to keep improving, communicate clearly,
-                    and deliver work that matches each client's requirements.
-                </p>
-            </div>
-        </div>
+    <section class="section-wrap fiverr-banner reveal">
+      <div>
+        <span class="eyebrow">LET'S WORK TOGETHER</span>
+        <h2>Have a website idea?</h2>
+        <p>Visit my Fiverr Gig to discuss your website requirements.</p>
+      </div>
+      <div class="banner-actions">
+        <a class="button fiverr-button" href="https://www.fiverr.com/s/9ddaB2D"
+           target="_blank" rel="noopener noreferrer">View Fiverr Gig ↗</a>
+        <a class="button secondary-button" href="https://www.fiverr.com/osmansk786428"
+           target="_blank" rel="noopener noreferrer">My Profile ↗</a>
+      </div>
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="section-heading">
-            <span class="eyebrow">MY TOOLKIT</span>
-            <h2>Skills & Learning</h2>
-            <p>Technologies and areas I'm currently developing.</p>
+    <section id="contact" class="section-wrap section-block">
+      <div class="section-heading reveal">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>Let's start a <span class="gradient-text">conversation</span></h2>
+        <p>Share a few details about your project.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-copy glass-card reveal">
+          <span class="card-icon">✉️</span>
+          <h3>Have a project in mind?</h3>
+          <p>Use the form to prepare an email, or contact me through Fiverr.</p>
+          <a class="contact-email" href="mailto:osmansk786428@gmail.com">
+            osmansk786428@gmail.com
+          </a>
+          <a class="button fiverr-button contact-fiverr"
+             href="https://www.fiverr.com/s/9ddaB2D"
+             target="_blank" rel="noopener noreferrer">Contact on Fiverr ↗</a>
         </div>
 
-        <div class="skills-grid">
-            <article class="skill-card">
-                <span class="skill-icon">🌐</span>
-                <h3>HTML & CSS</h3>
-                <p>Page structure and responsive layouts</p>
-                <span class="skill-label">Learning & building</span>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">⚡</span>
-                <h3>JavaScript</h3>
-                <p>Interactive features and basic validation</p>
-                <span class="skill-label">Learning & building</span>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">📊</span>
-                <h3>Data Entry</h3>
-                <p>Organizing and entering information</p>
-                <span class="skill-label">Beginner</span>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">🔎</span>
-                <h3>Web Research</h3>
-                <p>Finding and organizing online information</p>
-                <span class="skill-label">Beginner</span>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">🐧</span>
-                <h3>Linux</h3>
-                <p>Command-line practice and basic tools</p>
-                <span class="skill-label">Learning</span>
-            </article>
-
-            <article class="skill-card">
-                <span class="skill-icon">🛡️</span>
-                <h3>Cybersecurity</h3>
-                <p>Fundamentals and authorized lab practice</p>
-                <span class="skill-label">Learning</span>
-            </article>
-        </div>
+        <form id="contactForm" class="glass-card contact-form reveal">
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button primary-button submit-button" type="submit">Prepare Email ↗</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          <p class="small-note">Your email app will open with a draft. Review it and press Send.</p>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- Services -->
-    <section id="services" class="section">
-        <div class="section-heading">
-            <span class="eyebrow">HOW I CAN HELP</span>
-            <h2>My Services</h2>
-            <p>Services I am developing and can discuss with clients.</p>
-        </div>
-
-        <div class="services-grid">
-            <article class="service-card">
-                <span class="service-icon">💻</span>
-                <h3>Website Development</h3>
-                <p>Simple responsive pages using HTML, CSS and JavaScript.</p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">🗂️</span>
-                <h3>Data Entry</h3>
-                <p>Careful data organization and entry for clearly defined tasks.</p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">🔍</span>
-                <h3>Web Research</h3>
-                <p>Online research and organizing findings into a clear format.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <div class="section-heading">
-            <span class="eyebrow">SELECTED WORK</span>
-            <h2>My Projects</h2>
-            <p>A few projects and experiments from my learning journey.</p>
-        </div>
-
-        <div class="projects-grid">
-
-            <article class="project-card">
-                <div class="project-art art-purple">
-                    <span class="project-art-icon">✦</span>
-                    <span class="project-art-label">WEB DESIGN</span>
-                </div>
-                <div class="project-body">
-                    <span class="project-number">PROJECT 01</span>
-                    <h3>Personal Portfolio</h3>
-                    <p>A responsive portfolio website presenting my skills and work.</p>
-                    <div class="tech-tags">
-                        <span>HTML</span><span>CSS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://osmansk786428-art.github.io/Personal-portfolio/"
-                           target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
-                        <a href="https://github.com/osmansk786428-art/Personal-portfolio"
-                           target="_blank" rel="noopener noreferrer">Source Code ↗</a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-art art-blue">
-                    <span class="project-art-icon">✉</span>
-                    <span class="project-art-label">INTERACTIVE UI</span>
-                </div>
-                <div class="project-body">
-                    <span class="project-number">PROJECT 02</span>
-                    <h3>Contact Form UI</h3>
-                    <p>A form interface with required-field checks and email draft support.</p>
-                    <div class="tech-tags">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                    </div>
-                    <a class="project-single-link" href="#contact">View Contact Form ↓</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-art art-orange">
-                    <span class="project-art-icon">☾</span>
-                    <span class="project-art-label">THEME DESIGN</span>
-                </div>
-                <div class="project-body">
-                    <span class="project-number">PROJECT 03</span>
-                    <h3>Dark Mode Interface</h3>
-                    <p>A website theme that switches between light and dark appearance.</p>
-                    <div class="tech-tags">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                    </div>
-                    <button class="text-button" type="button" onclick="toggleTheme()">
-                        Try Theme Toggle ↗
-                    </button>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-        <div class="section-heading">
-            <span class="eyebrow">LET'S CONNECT</span>
-            <h2>Have a project in mind?</h2>
-            <p>Send a message to discuss your requirements.</p>
-        </div>
-
-        <div class="contact-card">
-            <form id="contactForm">
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="name">Your name</label>
-                        <input id="name" name="name" type="text"
-                               placeholder="Enter your name" required maxlength="100">
-                    </div>
-
-                    <div class="form-field">
-                        <label for="email">Your email</label>
-                        <input id="email" name="email" type="email"
-                               placeholder="you@example.com" required maxlength="150">
-                    </div>
-                </div>
-
-                <div class="form-field">
-                    <label for="subject">Subject</label>
-                    <input id="subject" name="subject" type="text"
-                           placeholder="What would you like to discuss?" required maxlength="150">
-                </div>
-
-                <div class="form-field">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"
-                              placeholder="Tell me a little about your project..."
-                              required maxlength="5000"></textarea>
-                </div>
-
-                <button class="button primary-button send-button" type="submit">
-                    Prepare Email ↗
-                </button>
-
-                <p class="form-note">
-                    Your email app will open with your message prepared.
-                    You can review it before sending.
-                </p>
-                <p id="formStatus" class="form-status" role="status"></p>
-            </form>
-        </div>
-    </section>
-
-</main>
-
-<footer class="site-footer">
+  <footer class="site-footer">
     <a class="logo" href="#home">Osmangazi<span>.</span></a>
-    <p>Learning, building and improving one project at a time.</p>
+    <p>Built with curiosity, code and a learning mindset.</p>
+    <div class="footer-links">
+      <a href="https://www.fiverr.com/osmansk786428" target="_blank" rel="noopener noreferrer">Fiverr</a>
+      <a href="https://github.com/osmansk786428-art" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="#home">Back to top ↑</a>
+    </div>
     <p class="copyright">© <span id="year"></span> Osmangazi. All rights reserved.</p>
-</footer>
+  </footer>
 
-<script>
-    /*
-      IMPORTANT:
-      Replace this address with the email where you want to receive messages.
-    */
+  <script>
     const RECEIVER_EMAIL = "osmansk786428@gmail.com";
-
     const themeButton = document.getElementById("themeButton");
+    const menuButton = document.getElementById("menuButton");
+    const mainNav = document.getElementById("mainNav");
 
     function updateThemeButton() {
-        const isDark = document.body.classList.contains("dark");
-        themeButton.textContent = isDark ? "☀️" : "🌙";
-        themeButton.setAttribute(
-            "aria-label",
-            isDark ? "Switch to light mode" : "Switch to dark mode"
-        );
+      const dark = document.body.classList.contains("dark");
+      themeButton.textContent = dark ? "☀️" : "🌙";
+      themeButton.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
     }
 
     function toggleTheme() {
-        document.body.classList.toggle("dark");
-
-        const isDark = document.body.classList.contains("dark");
-
-        try {
-            localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
-        } catch (error) {
-            // Theme still works if browser storage is unavailable.
-        }
-
-        updateThemeButton();
+      document.body.classList.toggle("dark");
+      const theme = document.body.classList.contains("dark") ? "dark" : "light";
+      try { localStorage.setItem("portfolio-theme", theme); } catch (error) {}
+      updateThemeButton();
     }
+
+    themeButton.addEventListener("click", toggleTheme);
 
     try {
-        if (localStorage.getItem("portfolio-theme") === "dark") {
-            document.body.classList.add("dark");
-        }
+      if (localStorage.getItem("portfolio-theme") === "light") {
+        document.body.classList.remove("dark");
+      } else {
+        document.body.classList.add("dark");
+      }
     } catch (error) {
-        // Continue with the default theme.
+      document.body.classList.add("dark");
     }
-
     updateThemeButton();
+
+    menuButton.addEventListener("click", () => {
+      const open = mainNav.classList.toggle("nav-open");
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.textContent = open ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mainNav.classList.remove("nav-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+      });
+    });
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault();
+    const revealObserver = "IntersectionObserver" in window
+      ? new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 })
+      : null;
 
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const subject = document.getElementById("subject").value.trim();
-        const message = document.getElementById("message").value.trim();
-        const status = document.getElementById("formStatus");
-
-        if (!name || !email || !subject || !message) {
-            status.textContent = "Please complete all fields.";
-            return;
-        }
-
-        if (RECEIVER_EMAIL === "YOUR_EMAIL@example.com") {
-            status.textContent =
-                "Contact form needs your receiving email configured before it can prepare a message.";
-            return;
-        }
-
-        const body =
-            "Name: " + name + "\n" +
-            "Reply email: " + email + "\n\n" +
-            "Message:\n" + message;
-
-        const mailto =
-            "mailto:" + RECEIVER_EMAIL +
-            "?subject=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent(body);
-
-        status.textContent = "Opening your email app. Review the draft and press Send.";
-        window.location.href = mailto;
+    document.querySelectorAll(".reveal").forEach(element => {
+      if (revealObserver) revealObserver.observe(element);
+      else element.classList.add("visible");
     });
-</script>
 
+    document.getElementById("contactForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const status = document.getElementById("formStatus");
+
+      if (!name || !email || !subject || !message) {
+        status.textContent = "Please complete all fields.";
+        return;
+      }
+
+      const body = "Name: " + name + "\nReply email: " + email + "\n\nMessage:\n" + message;
+      const mailto = "mailto:" + RECEIVER_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      status.textContent = "Opening your email app. Review the draft and press Send.";
+      window.location.href = mailto;
+    });
+  </script>
 </body>
 </html>
