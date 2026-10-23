@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f7ff">
+    <meta name="description" content="Osmangazi — Freelancer and Web Developer. Website development, data entry and web research.">
 
-    <title>Osmangazi | Freelancer</title>
-
+    <title>Osmangazi | Freelancer & Web Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Theme Button -->
-    <button id="themeButton" onclick="toggleTheme()">
-        🌙 Dark Mode
-    </button>
+<header class="site-header">
+    <a class="logo" href="#home">Osmangazi<span>.</span></a>
 
-
-    <!-- Navigation -->
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -30,280 +25,367 @@
         <a href="#contact">Contact</a>
     </nav>
 
+    <button id="themeButton" class="theme-button" type="button"
+            onclick="toggleTheme()" aria-label="Toggle dark mode">
+        🌙
+    </button>
+</header>
 
-    <!-- Home -->
-    <section id="home">
+<main>
 
-        <h1>Hello, I am Osmangazi 👋</h1>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">FREELANCER · WEB DEVELOPER</span>
 
-        <h2>Freelancer & Web Developer</h2>
+            <h1>Hello, I'm <span>Osmangazi</span> 👋</h1>
 
-        <p>
-            I am learning Web Development,
-            Data Entry and Cybersecurity.
-        </p>
+            <h2>I build simple, responsive websites.</h2>
 
+            <p>
+                I'm developing my skills in web development, data entry
+                and web research while building useful digital projects.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button primary-button" href="#contact">Hire Me ↗</a>
+                <a class="button secondary-button" href="#projects">View Projects ↓</a>
+            </div>
+
+            <div class="hero-note">
+                <span class="status-dot"></span>
+                Open to discussing suitable projects
+            </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card">
+                <div class="visual-icon">&lt;/&gt;</div>
+                <div class="visual-line long"></div>
+                <div class="visual-line medium"></div>
+                <div class="visual-line short"></div>
+                <div class="visual-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+            </div>
+            <div class="floating-badge badge-top">✦ Creative ideas</div>
+            <div class="floating-badge badge-bottom">⌘ Always learning</div>
+        </div>
     </section>
-
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
+        <div class="section-heading">
+            <span class="eyebrow">GET TO KNOW ME</span>
+            <h2>About Me</h2>
+            <p>A beginner freelancer focused on learning and building.</p>
+        </div>
 
-        <h2>About Me</h2>
-
-        <p>
-            I am a beginner freelancer interested in
-            Web Development, Data Entry and Cybersecurity.
-        </p>
-
-        <p>
-            I enjoy learning new technologies and
-            building useful projects.
-        </p>
-
+        <div class="about-card">
+            <div class="about-symbol">✦</div>
+            <div>
+                <h3>Learning today. Building for tomorrow.</h3>
+                <p>
+                    I am a beginner freelancer interested in web development,
+                    data entry and web research. I enjoy learning new
+                    technologies and creating practical projects.
+                </p>
+                <p>
+                    My goal is to keep improving, communicate clearly,
+                    and deliver work that matches each client's requirements.
+                </p>
+            </div>
+        </div>
     </section>
-
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
+        <div class="section-heading">
+            <span class="eyebrow">MY TOOLKIT</span>
+            <h2>Skills & Learning</h2>
+            <p>Technologies and areas I'm currently developing.</p>
+        </div>
 
-        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <article class="skill-card">
+                <span class="skill-icon">🌐</span>
+                <h3>HTML & CSS</h3>
+                <p>Page structure and responsive layouts</p>
+                <span class="skill-label">Learning & building</span>
+            </article>
 
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Data Entry</li>
-            <li>Web Research</li>
-            <li>Linux</li>
-            <li>Cybersecurity Basics</li>
-        </ul>
+            <article class="skill-card">
+                <span class="skill-icon">⚡</span>
+                <h3>JavaScript</h3>
+                <p>Interactive features and basic validation</p>
+                <span class="skill-label">Learning & building</span>
+            </article>
 
+            <article class="skill-card">
+                <span class="skill-icon">📊</span>
+                <h3>Data Entry</h3>
+                <p>Organizing and entering information</p>
+                <span class="skill-label">Beginner</span>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-icon">🔎</span>
+                <h3>Web Research</h3>
+                <p>Finding and organizing online information</p>
+                <span class="skill-label">Beginner</span>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-icon">🐧</span>
+                <h3>Linux</h3>
+                <p>Command-line practice and basic tools</p>
+                <span class="skill-label">Learning</span>
+            </article>
+
+            <article class="skill-card">
+                <span class="skill-icon">🛡️</span>
+                <h3>Cybersecurity</h3>
+                <p>Fundamentals and authorized lab practice</p>
+                <span class="skill-label">Learning</span>
+            </article>
+        </div>
     </section>
-
 
     <!-- Services -->
-    <section id="services">
+    <section id="services" class="section">
+        <div class="section-heading">
+            <span class="eyebrow">HOW I CAN HELP</span>
+            <h2>My Services</h2>
+            <p>Services I am developing and can discuss with clients.</p>
+        </div>
 
-        <h2>My Services</h2>
+        <div class="services-grid">
+            <article class="service-card">
+                <span class="service-icon">💻</span>
+                <h3>Website Development</h3>
+                <p>Simple responsive pages using HTML, CSS and JavaScript.</p>
+            </article>
 
-        <table>
+            <article class="service-card">
+                <span class="service-icon">🗂️</span>
+                <h3>Data Entry</h3>
+                <p>Careful data organization and entry for clearly defined tasks.</p>
+            </article>
 
-            <tr>
-                <th>Service</th>
-                <th>Level</th>
-            </tr>
-
-            <tr>
-                <td>Web Development</td>
-                <td>Beginner</td>
-            </tr>
-
-            <tr>
-                <td>Data Entry</td>
-                <td>Beginner</td>
-            </tr>
-
-            <tr>
-                <td>Web Research</td>
-                <td>Beginner</td>
-            </tr>
-
-            <tr>
-                <td>Cybersecurity</td>
-                <td>Learning</td>
-            </tr>
-
-        </table>
-
+            <article class="service-card">
+                <span class="service-icon">🔍</span>
+                <h3>Web Research</h3>
+                <p>Online research and organizing findings into a clear format.</p>
+            </article>
+        </div>
     </section>
-
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="section">
+        <div class="section-heading">
+            <span class="eyebrow">SELECTED WORK</span>
+            <h2>My Projects</h2>
+            <p>A few projects and experiments from my learning journey.</p>
+        </div>
 
-    <h2>My Projects</h2>
+        <div class="projects-grid">
 
-    <div class="project">
+            <article class="project-card">
+                <div class="project-art art-purple">
+                    <span class="project-art-icon">✦</span>
+                    <span class="project-art-label">WEB DESIGN</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-number">PROJECT 01</span>
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive portfolio website presenting my skills and work.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://osmansk786428-art.github.io/Personal-portfolio/"
+                           target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+                        <a href="https://github.com/osmansk786428-art/Personal-portfolio"
+                           target="_blank" rel="noopener noreferrer">Source Code ↗</a>
+                    </div>
+                </div>
+            </article>
 
-        <h3>🌐 Personal Portfolio</h3>
+            <article class="project-card">
+                <div class="project-art art-blue">
+                    <span class="project-art-icon">✉</span>
+                    <span class="project-art-label">INTERACTIVE UI</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-number">PROJECT 02</span>
+                    <h3>Contact Form UI</h3>
+                    <p>A form interface with required-field checks and email draft support.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a class="project-single-link" href="#contact">View Contact Form ↓</a>
+                </div>
+            </article>
 
-        <p>
-            A responsive freelancer portfolio
-            built using HTML and CSS.
-        </p>
+            <article class="project-card">
+                <div class="project-art art-orange">
+                    <span class="project-art-icon">☾</span>
+                    <span class="project-art-label">THEME DESIGN</span>
+                </div>
+                <div class="project-body">
+                    <span class="project-number">PROJECT 03</span>
+                    <h3>Dark Mode Interface</h3>
+                    <p>A website theme that switches between light and dark appearance.</p>
+                    <div class="tech-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <button class="text-button" type="button" onclick="toggleTheme()">
+                        Try Theme Toggle ↗
+                    </button>
+                </div>
+            </article>
 
-        <p>
-            <strong>Technology:</strong>
-            HTML, CSS
-        </p>
-
-    </div>
-
-
-    <div class="project">
-
-        <h3>📋 Contact Form</h3>
-
-        <p>
-            A contact form with JavaScript
-            validation.
-        </p>
-
-        <p>
-            <strong>Technology:</strong>
-            HTML, CSS, JavaScript
-        </p>
-
-    </div>
-
-
-    <div class="project">
-
-        <h3>🌙 Dark Mode Website</h3>
-
-        <p>
-            A website with JavaScript-powered
-            Dark and Light Mode.
-        </p>
-
-        <p>
-            <strong>Technology:</strong>
-            HTML, CSS, JavaScript
-        </p>
-
-    </div>
-
+        </div>
     </section>
-
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section contact-section">
+        <div class="section-heading">
+            <span class="eyebrow">LET'S CONNECT</span>
+            <h2>Have a project in mind?</h2>
+            <p>Send a message to discuss your requirements.</p>
+        </div>
 
-        <h2>Contact Me</h2>
+        <div class="contact-card">
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Your name</label>
+                        <input id="name" name="name" type="text"
+                               placeholder="Enter your name" required maxlength="100">
+                    </div>
 
-        <form>
+                    <div class="form-field">
+                        <label for="email">Your email</label>
+                        <input id="email" name="email" type="email"
+                               placeholder="you@example.com" required maxlength="150">
+                    </div>
+                </div>
 
-            <label>Name:</label>
+                <div class="form-field">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text"
+                           placeholder="What would you like to discuss?" required maxlength="150">
+                </div>
 
-            <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-            >
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"
+                              placeholder="Tell me a little about your project..."
+                              required maxlength="5000"></textarea>
+                </div>
 
-            <br><br>
+                <button class="button primary-button send-button" type="submit">
+                    Prepare Email ↗
+                </button>
 
-
-            <label>Email:</label>
-
-            <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-            >
-
-            <br><br>
-
-
-            <label>Message:</label>
-
-            <textarea
-                name="message"
-                placeholder="Write your message"
-            ></textarea>
-
-            <br><br>
-
-
-            <button
-                type="button"
-                onclick="sendMessage()"
-            >
-                Send
-            </button>
-
-        </form>
-
+                <p class="form-note">
+                    Your email app will open with your message prepared.
+                    You can review it before sending.
+                </p>
+                <p id="formStatus" class="form-status" role="status"></p>
+            </form>
+        </div>
     </section>
 
+</main>
 
-    <!-- Footer -->
-    <footer>
+<footer class="site-footer">
+    <a class="logo" href="#home">Osmangazi<span>.</span></a>
+    <p>Learning, building and improving one project at a time.</p>
+    <p class="copyright">© <span id="year"></span> Osmangazi. All rights reserved.</p>
+</footer>
 
-        <p>
-            © 2026 Osmangazi. All Rights Reserved.
-        </p>
+<script>
+    /*
+      IMPORTANT:
+      Replace this address with the email where you want to receive messages.
+    */
+    const RECEIVER_EMAIL = "YOUR_EMAIL@example.com";
 
-    </footer>
+    const themeButton = document.getElementById("themeButton");
 
+    function updateThemeButton() {
+        const isDark = document.body.classList.contains("dark");
+        themeButton.textContent = isDark ? "☀️" : "🌙";
+        themeButton.setAttribute(
+            "aria-label",
+            isDark ? "Switch to light mode" : "Switch to dark mode"
+        );
+    }
 
-    <!-- JavaScript -->
-    <script>
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
 
-        function sendMessage() {
+        const isDark = document.body.classList.contains("dark");
 
-            let name =
-                document.querySelector(
-                    'input[name="name"]'
-                ).value;
-
-            let email =
-                document.querySelector(
-                    'input[name="email"]'
-                ).value;
-
-            let message =
-                document.querySelector(
-                    'textarea[name="message"]'
-                ).value;
-
-
-            if (
-                name === "" ||
-                email === "" ||
-                message === ""
-            ) {
-
-                alert("Please fill in all fields!");
-
-                return;
-            }
-
-
-            alert("Message Sent Successfully!");
-
+        try {
+            localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
+        } catch (error) {
+            // Theme still works if browser storage is unavailable.
         }
 
+        updateThemeButton();
+    }
 
-        function toggleTheme() {
+    try {
+        if (localStorage.getItem("portfolio-theme") === "dark") {
+            document.body.classList.add("dark");
+        }
+    } catch (error) {
+        // Continue with the default theme.
+    }
 
-            document.body.classList.toggle("dark");
+    updateThemeButton();
 
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-            let button =
-                document.getElementById(
-                    "themeButton"
-                );
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault();
 
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const status = document.getElementById("formStatus");
 
-            if (
-                document.body.classList.contains("dark")
-            ) {
-
-                button.textContent =
-                    "☀️ Light Mode";
-
-            } else {
-
-                button.textContent =
-                    "🌙 Dark Mode";
-
-            }
-
+        if (!name || !email || !subject || !message) {
+            status.textContent = "Please complete all fields.";
+            return;
         }
 
-    </script>
+        if (RECEIVER_EMAIL === "YOUR_EMAIL@example.com") {
+            status.textContent =
+                "Contact form needs your receiving email configured before it can prepare a message.";
+            return;
+        }
+
+        const body =
+            "Name: " + name + "\n" +
+            "Reply email: " + email + "\n\n" +
+            "Message:\n" + message;
+
+        const mailto =
+            "mailto:" + RECEIVER_EMAIL +
+            "?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+
+        status.textContent = "Opening your email app. Review the draft and press Send.";
+        window.location.href = mailto;
+    });
+</script>
 
 </body>
-
 </html>
